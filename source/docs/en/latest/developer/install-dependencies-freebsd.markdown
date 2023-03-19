@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on FreeBSD
 ==================================
 
-The following instructions are for [FreeBSD](https://www.freebsd.org) 11 and 12.
+The following instructions are for [FreeBSD](https://www.freebsd.org) 12 and 13.
 
 Basic requirements to run commands:
 
@@ -39,7 +39,7 @@ Dependencies:
 - gtar
 - harfbuzz
 - jansson
-- lame (source port)
+- lame
 - libass
 - libiconv
 - libjpeg-turbo
@@ -65,6 +65,7 @@ Dependencies:
 Intel Quick Sync Video dependencies (optional):
 
 - intel-media-sdk
+- onevpl
 
 Graphical interface dependencies:
 
@@ -76,34 +77,22 @@ Graphical interface dependencies:
 - gdk-pixbuf2
 - gettext
 - glib
-- gnome3
 - gstreamer1-plugins-gdkpixbuf
 - gtk3
 - intltool
-- libdvdcss
 - libnotify
 - pango
 
 Install dependencies.
 
-    sudo pkg install autoconf automake bash bzip2 cmake flac fontconfig freetype2 fribidi gcc git lzma gmake gtar harfbuzz jansson libass libiconv libjpeg-turbo libogg libsamplerate libtheora libtool libvorbis libvpx libx264 libxml2 m4 meson nasm ninja opus patch pkgconf python speex
-
-Build and install the `lame` source port.
-
-    sudo portsnap fetch
-    bash -c 'if [[ ! -e /usr/ports ]]; then sudo portsnap extract; fi'
-    sudo portsnap update
-    LASTDIR="`pwd`"
-    cd /usr/ports/audio/lame
-    sudo make install || sudo make reinstall
-    cd "$LASTDIR"
+    sudo pkg install autoconf automake bash bzip2 cmake flac fontconfig freetype2 fribidi gcc git lzma gmake gtar harfbuzz jansson lame libass libiconv libjpeg-turbo libogg libsamplerate libtheora libtool libvorbis libvpx libx264 libxml2 m4 meson nasm ninja opus patch pkgconf python speex
 
 To build with Intel Quick Sync Video support, install the QSV dependencies.
 
-    sudo pkg install intel-media-sdk
+    sudo pkg install intel-media-sdk onevpl
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo pkg install atk cairo dbus dbus-glib desktop-file-utils gdk-pixbuf2 gettext glib gnome3 gstreamer1-plugins-gdkpixbuf gtk3 intltool libdvdcss libnotify pango
+    sudo pkg install atk cairo dbus dbus-glib desktop-file-utils gdk-pixbuf2 gettext glib gstreamer1-plugins-gdkpixbuf gtk3 intltool libnotify pango
 
 FreeBSD is now prepared to build HandBrake. See [Building HandBrake for BSD](build-bsd.html) for further instructions.
