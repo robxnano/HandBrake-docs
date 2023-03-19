@@ -26,17 +26,14 @@ Dependencies:
 
 - autoconf
 - automake
-- bash
 - bzip2
 - cmake
 - flac
 - fontconfig
 - freetype2
 - fribidi
-- gcc
 - git
 - gmake
-- gtar
 - harfbuzz
 - jansson
 - lame
@@ -65,7 +62,6 @@ Dependencies:
 Intel Quick Sync Video dependencies (optional):
 
 - intel-media-sdk
-- onevpl
 
 Graphical interface dependencies:
 
@@ -85,11 +81,11 @@ Graphical interface dependencies:
 
 Install dependencies.
 
-    sudo pkg install autoconf automake bash bzip2 cmake flac fontconfig freetype2 fribidi gcc git lzma gmake gtar harfbuzz jansson lame libass libiconv libjpeg-turbo libogg libsamplerate libtheora libtool libvorbis libvpx libx264 libxml2 m4 meson nasm ninja opus patch pkgconf python speex
+    sudo pkg install autoconf automake bzip2 cmake flac fontconfig freetype2 fribidi git lzma gmake harfbuzz jansson lame libass libiconv libjpeg-turbo libogg libsamplerate libtheora libtool libvorbis libvpx libx264 libxml2 m4 meson nasm ninja opus patch pkgconf python speex
 
 To build with Intel Quick Sync Video support, install the QSV dependencies.
 
-    sudo pkg install intel-media-sdk onevpl
+    sudo pkg install intel-media-sdk
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 

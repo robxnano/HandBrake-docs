@@ -24,8 +24,8 @@ Basic requirements to run commands:
 
 Dependencies:
 
-- autoconf 2.71
-- automake 1.16.5
+- autoconf-2.71
+- automake-1.16.5
 - bash
 - bzip2
 - cmake
@@ -70,10 +70,10 @@ Graphical interface dependencies:
 - gettext-tools
 - glib2
 - gstreamer1-plugins-base
+- gstreamer1-plugins-good
 - gstreamer1-plugins-libav
 - gtk+3
 - intltool
-- libnotify
 - pango
 
 Install dependencies.
@@ -82,6 +82,6 @@ Install dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo pkg_add atk cairo dbus dbus-glib desktop-file-utils gdk-pixbuf gettext-tools glib2 gstreamer1-plugins-base gstreamer1-plugins-libav gtk+3 intltool libnotify pango
+    sudo pkg_add atk cairo dbus dbus-glib desktop-file-utils gdk-pixbuf gettext-tools glib2 gstreamer1-plugins-base gstreamer1-plugins-good gst1-plugins-libav gtk+3 intltool pango
 
 OpenBSD is now prepared to build HandBrake. See [Building HandBrake for BSD](build-bsd.html) for further instructions.

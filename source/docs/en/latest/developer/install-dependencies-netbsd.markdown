@@ -28,7 +28,6 @@ Dependencies:
 
 - autoconf
 - automake
-- bash
 - bzip2
 - cmake
 - flac
@@ -43,7 +42,6 @@ Dependencies:
 - lame
 - libass
 - libiconv
-- libjpeg-turbo
 - libogg
 - libopus
 - libsamplerate
@@ -59,7 +57,6 @@ Dependencies:
 - ninja-build
 - patch
 - pkgconf
-- python37
 - speex
 - x264-devel
 
@@ -85,7 +82,7 @@ Graphical interface dependencies:
 
 Install dependencies.
 
-    sudo pkgin install autoconf automake bash bzip2 cmake flac fontconfig freetype2 fribidi git gmake gtar-base harfbuzz jansson lame libass libiconv libjpeg-turbo libogg libopus libsamplerate libtheora libtool-base libvorbis libvpx libxml2 lzmalib m4 meson nasm ninja-build patch pkgconf python37 speex x264-devel
+    sudo pkgin install autoconf automake bzip2 cmake flac fontconfig freetype2 fribidi git gmake gtar-base harfbuzz jansson lame libass libiconv libogg libopus libsamplerate libtheora libtool-base libvorbis libvpx libxml2 lzmalib m4 meson nasm ninja-build patch pkgconf speex x264-devel
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
