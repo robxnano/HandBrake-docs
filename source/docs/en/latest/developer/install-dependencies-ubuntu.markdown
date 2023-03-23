@@ -73,13 +73,10 @@ Graphical interface dependencies:
 
 - gstreamer1.0-libav
 - intltool
-- libappindicator-dev
 - libdbus-glib-1-dev
 - libglib2.0-dev
 - libgstreamer1.0-dev
 - libgtk-3-dev
-- libnotify-dev
-- libwebkit2gtk-4.0-dev
 
 Install dependencies.
 
@@ -92,6 +89,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo apt-get install gstreamer1.0-libav intltool libappindicator-dev libdbus-glib-1-dev libglib2.0-dev libgstreamer1.0-dev libgtk-3-dev libnotify-dev libwebkit2gtk-4.0-dev
+    sudo apt-get install gstreamer1.0-libav intltool libdbus-glib-1-dev libglib2.0-dev libgstreamer1.0-dev libgtk-3-dev
 
 Ubuntu is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.

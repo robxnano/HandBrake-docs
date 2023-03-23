@@ -73,7 +73,6 @@ Intel Quick Sync Video dependencies (optional):
 Graphical interface dependencies:
 
 - intltool
-- libappindicator-dev
 - libdbus-glib-1-dev
 - libglib2.0-dev
 - libgstreamer1.0-dev

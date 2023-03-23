@@ -65,8 +65,6 @@ Graphical interface dependencies:
 - gstreamer1-devel
 - gstreamer1-plugins-base-devel
 - intltool
-- libnotify-devel
-- webkit2gtk3-devel
 
 Additional graphical interface dependencies not available in the base repository:
 
@@ -100,6 +98,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo dnf install dbus-glib-devel gstreamer1-devel gstreamer1-libav gstreamer1-plugins-base-devel intltool libgudev1-devel libnotify-devel webkit2gtk3-devel
+    sudo dnf install dbus-glib-devel gstreamer1-devel gstreamer1-libav gstreamer1-plugins-base-devel intltool libgudev1-devel
 
 CentOS is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.
