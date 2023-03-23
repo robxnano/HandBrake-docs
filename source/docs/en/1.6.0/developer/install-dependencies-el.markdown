@@ -1,24 +1,22 @@
 ---
 Type:            article
-Title:           Installing dependencies on CentOS
+Title:           Installing dependencies on Enterprise Linux
 Project:         HandBrake
 Project_URL:     https://handbrake.fr/
 Project_Version: 1.6.0
 Language:        English
 Language_Code:   en
-Authors:         [ Bradley Sepos <bradley@bradleysepos.com> (BradleyS) ]
+Authors:         [ Bradley Sepos <bradley@bradleysepos.com> (BradleyS), Rob (robxnano) ]
 Copyright:       2023 HandBrake Team
 License:         Creative Commons Attribution-ShareAlike 4.0 International
 License_Abbr:    CC BY-SA 4.0
 License_URL:     https://handbrake.fr/docs/license.html
 ---
 
-Installing dependencies on CentOS
-=================================
+Installing dependencies on Enterprise Linux
+===========================================
 
-## CentOS 8
-
-The following instructions are for [CentOS](https://centos.org) 8.
+The following instructions are for distributions based on Enterprise Linux 8 and 9 (such as [Rocky Linux](https://rockylinux.org) and [AlmaLinux](https://almalinux.org)), as well as [CentOS Stream](https://centos.org).
 
 Basic requirements to run commands:
 
@@ -27,18 +25,31 @@ Basic requirements to run commands:
 
 Dependencies:
 
-- Development Tools
+- autoconf
+- automake
+- bzip2
 - cmake
+- diffutils
+- dnf-plugins-core
 - fribidi-devel
+- gcc-c++
+- gettext
 - git
-- jansson-devel
 - libxml2-devel
+- libtool
+- m4
+- make
 - numactl-devel
+- patch
+- pkg-config
 - python3
+- tar
 - xz-devel
 
 Additional dependencies not available in the base repository:
 
+- appstream [EPEL]
+- jansson-devel [PowerTools]
 - lame-devel [PowerTools]
 - libass-devel [EPEL]
 - libogg-devel [PowerTools]
@@ -64,6 +75,7 @@ Graphical interface dependencies:
 - dbus-glib-devel
 - gstreamer1-devel
 - gstreamer1-plugins-base-devel
+- gtk3-devel
 - intltool
 
 Additional graphical interface dependencies not available in the base repository:
@@ -73,23 +85,26 @@ Additional graphical interface dependencies not available in the base repository
 
 Install dependencies.
 
-    sudo dnf update
-    sudo dnf groupinstall "Development Tools"
-    sudo dnf install cmake fribidi-devel git jansson-devel libxml2-devel numactl-devel python3 xz-devel
+    sudo dnf install autoconf automake bzip2 cmake diffutils dnf-plugins-core fribidi-devel gcc-c++ gettext git libtool libxml2-devel m4 make numactl-devel patch pkg-config python39 tar xz-devel
 
-Enable the CentOS PowerTools repository and install related additional dependencies.
+Enable the Enterprise Linux [PowerTools](abbr:also known as CRB) repository and install related additional dependencies.
 
-    sudo dnf config-manager --set-enabled PowerTools
-    sudo dnf install lame-devel libogg-devel libsamplerate-devel libtheora-devel libvorbis-devel libvpx-devel meson nasm ninja-build opus-devel speex-devel turbojpeg-devel
+    sudo dnf config-manager --set-enabled crb || sudo dnf config-manager --set-enabled powertools
+    sudo dnf install jansson-devel lame-devel libogg-devel libsamplerate-devel libtheora-devel libvorbis-devel libvpx-devel meson nasm ninja-build opus-devel speex-devel turbojpeg-devel
 
 Install the [EPEL](https://fedoraproject.org/wiki/EPEL) repository and related additional dependencies.
 
+    # AlmaLinux/Rocky Linux:
     sudo dnf install epel-release
-    sudo dnf install libass-devel
+    sudo dnf install appstream libass-devel
+
+    # CentOS Stream:
+    sudo dnf install epel-next-release
+    sudo dnf install appstream libass-devel
 
 Install the [RPM Fusion](http://rpmfusion.org) Free repository and related additional dependencies.
 
-    sudo dnf localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm
+    sudo dnf localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm
     sudo dnf install x264-devel
 
 To build with Intel Quick Sync Video support, install the QSV dependencies.
@@ -98,6 +113,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo dnf install dbus-glib-devel gstreamer1-devel gstreamer1-libav gstreamer1-plugins-base-devel intltool libgudev1-devel
+    sudo dnf install dbus-glib-devel gstreamer1-devel gstreamer1-libav gstreamer1-plugins-base-devel gtk3-devel intltool libgudev1-devel
 
-CentOS is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.
+Enterprise Linux is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.
