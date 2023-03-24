@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on Arch
 ===============================
 
-The following instructions are for [Arch](https://www.archlinux.org) 2019.09.01.
+The following instructions are for [Arch](https://www.archlinux.org) 2023.03.01.
 
 Basic requirements to run commands:
 
@@ -64,19 +64,20 @@ Graphical interface dependencies:
 - gstreamer
 - gst-libav
 - gst-plugins-base
+- gtk3
 - intltool
 - libgudev
 
 Install dependencies.
 
-    sudo pacman -S base-devel cmake flac fontconfig freetype2 fribidi git harfbuzz jansson lame libass libbluray libjpeg-turbo libogg libsamplerate libtheora libvorbis libvpx libxml2 meson nasm ninja numactl opus python2 speex x264 xz
+    sudo pacman -Syu base-devel cmake flac fontconfig freetype2 fribidi git harfbuzz jansson lame libass libbluray libjpeg-turbo libogg libsamplerate libtheora libvorbis libvpx libxml2 meson nasm ninja numactl opus python2 speex x264 xz
 
 To build with Intel Quick Sync Video support, install the QSV dependencies.
 
-    sudo pacman -S libva libdrm
+    sudo pacman -Syu libva libdrm
 
-To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies. Requires the GNOME desktop and associated packages, e.g. installed using `pacman -S xorg xorg-server && pacman -S gnome gnome-extra`.
+To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo pacman -S dbus-glib gstreamer gst-libav gst-plugins-base intltool libgudev
+    sudo pacman -Syu dbus-glib gstreamer gst-libav gst-plugins-base gtk3 intltool libgudev
 
 Arch is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.
