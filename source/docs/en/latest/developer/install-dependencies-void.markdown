@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on Void
 ===============================
 
-The following instructions are for [Void](https://voidlinux.org) 2020-02-15.
+The following instructions are for [Void](https://voidlinux.org) 2022-10-01.
 
 Basic requirements to run commands:
 
@@ -39,7 +39,7 @@ Dependencies:
 - lbzip2
 - libass-devel
 - libflac-devel
-- libjpeg-turbo
+- libjpeg-turbo-devel
 - liblzma-devel
 - libnuma-devel
 - libogg-devel
@@ -88,6 +88,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo xbps-install dbus-glib-devel gettext-devel glib-devel gst-libav gst-plugins-base1-devel gstreamer1-devel intltool libgudev-devel
+    sudo xbps-install dbus-glib-devel gettext-devel glib-devel gst-libav gst-plugins-base1-devel gstreamer1-devel gtk+3-devel intltool libgudev-devel
 
 Void is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.
