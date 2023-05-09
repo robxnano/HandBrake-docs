@@ -79,7 +79,6 @@ Graphical interface dependencies:
 - gstreamer1-libav
 - gstreamer1-plugins-base-devel
 - gtk3-devel
-- libgudev1-devel
 
 Install dependencies.
 
@@ -96,6 +95,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo dnf install dbus-glib-devel gstreamer1-devel gstreamer1-libav gstreamer1-plugins-base-devel gtk3-devel libgudev1-devel
+    sudo dnf install dbus-glib-devel gstreamer1-devel gstreamer1-libav gstreamer1-plugins-base-devel gtk3-devel
 
 Fedora is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.

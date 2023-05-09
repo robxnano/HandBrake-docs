@@ -74,7 +74,6 @@ Graphical interface dependencies:
 - gst-libav
 - gst-plugins-base1-devel
 - gstreamer1-devel
-- libgudev-devel
 
 Install dependencies.
 
@@ -87,6 +86,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo xbps-install dbus-glib-devel gettext-devel glib-devel gst-libav gst-plugins-base1-devel gstreamer1-devel gtk+3-devel libgudev-devel
+    sudo xbps-install dbus-glib-devel gettext-devel glib-devel gst-libav gst-plugins-base1-devel gstreamer1-devel gtk+3-devel
 
 Void is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.
