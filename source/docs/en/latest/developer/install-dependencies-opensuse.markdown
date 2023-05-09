@@ -81,7 +81,6 @@ Graphical interface dependencies:
 - gstreamer1-plugins-base-devel
 - gstreamer1-libav
 - gtk3-devel
-- intltool
 - libgudev1-devel
 
 Install dependencies.
@@ -105,6 +104,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo zypper install dbus-1-glib-devel gstreamer-devel gstreamer-plugins-base-devel gstreamer-plugins-libav gtk3-devel intltool libgudev-1_0-devel
+    sudo zypper install dbus-1-glib-devel gstreamer-devel gstreamer-plugins-base-devel gstreamer-plugins-libav gtk3-devel libgudev-1_0-devel
 
 OpenSUSE is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.

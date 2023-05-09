@@ -71,7 +71,6 @@ Graphical interface dependencies:
 - gstreamer1-plugins-good
 - gstreamer1-plugins-libav
 - gtk+3
-- intltool
 - pango
 
 Install dependencies.
@@ -80,6 +79,6 @@ Install dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo pkg_add atk cairo dbus dbus-glib desktop-file-utils gdk-pixbuf gettext-tools glib2 gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-libav gtk+3 intltool pango
+    sudo pkg_add atk cairo dbus dbus-glib desktop-file-utils gdk-pixbuf gettext-tools glib2 gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-libav gtk+3 pango
 
 OpenBSD is now prepared to build HandBrake. See [Building HandBrake for BSD](build-bsd.html) for further instructions.
