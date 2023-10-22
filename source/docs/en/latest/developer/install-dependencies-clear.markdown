@@ -58,6 +58,10 @@ Intel Quick Sync Video dependencies (optional):
 - devpkg-libva
 - devpkg-libdrm
 
+Dolby Vision dependencies (optional):
+
+- rust-basic
+
 Graphical interface dependencies:
 
 - desktop-dev
@@ -65,6 +69,12 @@ Graphical interface dependencies:
 Install dependencies.
 
     sudo swupd bundle-add c-basic dev-utils devpkg-bzip2 devpkg-fontconfig devpkg-freetype devpkg-fribidi devpkg-jansson devpkg-harfbuzz devpkg-libass devpkg-libjpeg-turbo devpkg-libogg devpkg-libsamplerate devpkg-libtheora devpkg-libvorbis devpkg-libvpx devpkg-libxml2 devpkg-numactl devpkg-opus devpkg-speex devpkg-xz devpkg-zlib git
+
+To build with Dolby Vision support, install the libdovi dependencies.
+
+    sudo swupd bundle-add rust-basic
+    export PATH="$HOME/.cargo/bin:$PATH"
+    cargo install cargo-c
 
 Build and install the dependencies not available in the base repository.
 

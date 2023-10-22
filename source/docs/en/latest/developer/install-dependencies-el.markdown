@@ -109,6 +109,17 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
     sudo dnf install libva-devel libdrm-devel
 
+To build with Dolby Vision support, install the libdovi dependencies.
+
+    # EL 8:
+    sudo dnf install openssl-devel
+    curl -sSf https://sh.rustup.rs | sh -s -- --profile minimal
+    source "$HOME/.cargo/env"
+    cargo install cargo-c
+
+    # EL 9:
+    sudo dnf install cargo cargo-c rust
+
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
     sudo dnf install appstream desktop-file-utils gstreamer1-libav gstreamer1-plugins-base-devel gstreamer1-plugins-good gtk3-devel

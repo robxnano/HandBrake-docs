@@ -68,6 +68,12 @@ Intel Quick Sync Video dependencies (optional):
 - libva-dev
 - libdrm-dev
 
+Dolby Vision dependencies (optional):
+
+- cargo
+- cargo-c
+- rustc
+
 Graphical interface dependencies:
 
 - appstream
@@ -86,6 +92,17 @@ Install dependencies.
 To build with Intel Quick Sync Video support, install the QSV dependencies.
 
     sudo apt-get install libva-dev libdrm-dev
+
+To build with Dolby Vision support, install the libdovi dependencies.
+
+    # Debian 11:
+    sudo apt-get install libssl-dev
+    curl -sSf https://sh.rustup.rs | sh -s -- --profile minimal
+    source "$HOME/.cargo/env"
+    cargo install cargo-c
+
+    # Debian 12:
+    sudo apt-get install cargo cargo-c rustc
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 

@@ -70,6 +70,12 @@ Intel Quick Sync Video dependencies (optional):
 - libva-devel
 - libdrm-devel
 
+Dolby Vision dependencies (optional):
+
+- cargo
+- cargo-c
+- rustc
+
 Graphical interface dependencies:
 
 - desktop-file-utils
@@ -88,6 +94,10 @@ Install dependencies.
 To build with Intel Quick Sync Video support, install the QSV dependencies.
 
     sudo xbps-install -u libva-devel libdrm-devel
+
+To build with Dolby Vision support, install the libdovi dependencies.
+
+    sudo xbps-install -u cargo cargo-c rust
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 

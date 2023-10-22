@@ -71,6 +71,12 @@ Intel Quick Sync Video dependencies (optional):
 - libva-devel
 - libdrm-devel
 
+Dolby Vision dependencies (optional):
+
+- cargo
+- cargo-c
+- rust
+
 Graphical interface dependencies:
 
 - desktop-file-utils
@@ -91,6 +97,10 @@ Install the [RPM Fusion](http://rpmfusion.org) Free repository and related addit
 To build with Intel Quick Sync Video support, install the QSV dependencies.
 
     sudo dnf install libva-devel libdrm-devel
+
+To build with Dolby Vision support, install the libdovi dependencies.
+
+    sudo dnf install cargo cargo-c rust
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 

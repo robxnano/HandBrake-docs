@@ -49,8 +49,12 @@ Dependencies:
 - pkg-config
 - tar
 - zlib1g-dev
-- rustc
+
+Additional dependencies installed through rustup:
+
 - cargo
+- cargo-c
+- rustc
 
 Additional MinGW-w64 toolchain dependencies:
 
@@ -66,15 +70,13 @@ Install dependencies.
 
     sudo apt-get update
     sudo apt-get install automake autoconf autopoint build-essential cmake gcc git intltool libtool libtool-bin m4 make meson nasm ninja-build patch pkg-config tar zlib1g-dev clang curl
-    curl https://sh.rustup.rs -sSf | sh
+    curl -sSf https://sh.rustup.rs | sh -s -- --profile minimal --target x86_64-pc-windows-gnu
     source "$HOME/.cargo/env"
     cargo install cargo-c
-    rustup target add x86_64-pc-windows-gnu
 
 Install the additional dependencies required to build the MinGW-w64 toolchain.
 
     sudo apt-get install bison bzip2 curl flex g++ gzip pax
-
 
 ### Building the MinGW-w64 toolchain and HandBrake
 

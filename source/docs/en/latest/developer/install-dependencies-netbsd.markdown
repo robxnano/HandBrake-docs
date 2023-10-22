@@ -60,6 +60,12 @@ Dependencies:
 - x264
 - xz
 
+Dolby Vision dependencies (optional):
+
+- cargo
+- cargo-c
+- rust
+
 Graphical interface dependencies:
 
 - desktop-file-utils
@@ -74,6 +80,10 @@ Graphical interface dependencies:
 Install dependencies.
 
     sudo pkgin in autoconf automake cmake flac fontconfig freetype2 fribidi git gmake gtar-base harfbuzz jansson lame libass libiconv libogg libopus libsamplerate libtheora libtool-base libvorbis libvpx libxml2 m4 meson nasm ninja-build patch pkgconf speex x264 xz
+
+To build with Dolby Vision support, install the libdovi dependencies.
+
+    sudo pkgin in cargo cargo-c rust
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 

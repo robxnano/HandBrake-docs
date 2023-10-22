@@ -64,6 +64,11 @@ Intel Quick Sync Video dependencies (optional):
 - intel-media-sdk
 - oneVPL
 
+Dolby Vision dependencies (optional):
+
+- cargo-c
+- rust
+
 Graphical interface dependencies:
 
 - desktop-file-utils
@@ -79,6 +84,10 @@ Install dependencies.
 To build with Intel Quick Sync Video support, install the QSV dependencies.
 
     sudo pkg install intel-media-sdk oneVPL
+
+To build with Dolby Vision support, install the libdovi dependencies.
+
+    sudo pkg install cargo-c rust
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
