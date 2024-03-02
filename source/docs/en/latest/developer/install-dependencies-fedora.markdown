@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on Fedora
 =================================
 
-The following instructions are for [Fedora](https://getfedora.org) 38 and 39.
+The following instructions are for [Fedora](https://getfedora.org) 39 and 40.
 
 Basic requirements to run commands:
 
@@ -94,6 +94,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo dnf install desktop-file-utils gstreamer1-libav gstreamer1-plugins-base-devel gstreamer1-plugins-good gtk3-devel
+    sudo dnf install desktop-file-utils gstreamer1-libav gstreamer1-plugins-good gtk4-devel
 
 Fedora is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.

@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on Ubuntu
 =================================
 
-The following instructions are for [Ubuntu](https://www.ubuntu.com) 22.04 (Jammy Jellyfish) and 20.04 (Focal Fossa).
+The following instructions are for [Ubuntu](https://www.ubuntu.com) 22.04 (Jammy Jellyfish) and 24.04 (Noble Numbat).
 
 Basic requirements to run commands:
 
@@ -87,6 +87,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo apt-get install appstream desktop-file-utils gettext gstreamer1.0-libav gstreamer1.0-plugins-good libgstreamer-plugins-base1.0-dev libgtk-3-dev
+    sudo apt-get install appstream desktop-file-utils gettext gstreamer1.0-libav gstreamer1.0-plugins-good libgtk-4-dev
 
 Ubuntu is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.

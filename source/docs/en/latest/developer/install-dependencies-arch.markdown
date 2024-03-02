@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on Arch
 ===============================
 
-The following instructions are for [Arch](https://www.archlinux.org) 2023.10.01.
+The following instructions are for [Arch](https://www.archlinux.org) 2024.01.01.
 
 Basic requirements to run commands:
 
@@ -75,6 +75,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo pacman -Syu desktop-file-utils gst-libav gst-plugins-good gtk3
+    sudo pacman -Syu desktop-file-utils gst-libav gst-plugins-good gtk4
 
 Arch is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.

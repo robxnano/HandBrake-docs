@@ -80,6 +80,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo dnf install desktop-file-utils gtk+3.0-devel gstreamer1.0-libav gstreamer1.0-plugins-good gstreamer1.0-plugins-base-devel
+    sudo dnf install desktop-file-utils gtk4-devel gstreamer1.0-libav gstreamer1.0-plugins-good
 
 Mageia is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.

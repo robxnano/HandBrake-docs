@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on NetBSD
 =================================
 
-The following instructions are for [NetBSD](https://www.netbsd.org/) 8 and 9.
+The following instructions are for [NetBSD](https://www.netbsd.org/) 9 and 10.
 
 Basic requirements to run commands:
 
@@ -77,7 +77,7 @@ Install dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo pkgin in desktop-file-utils gettext glib2-tools gnome-themes-standard gst-plugins1-gdk_pixbuf gst-plugins1-libav gstreamer1 gtk3+
+    sudo pkgin in desktop-file-utils gettext glib2-tools gnome-themes-standard gst-plugins1-gdk_pixbuf gst-plugins1-libav gstreamer1 gtk4
 
 Ensure the newly installed packages have search path priority.
 

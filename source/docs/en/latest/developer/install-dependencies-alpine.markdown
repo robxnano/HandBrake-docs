@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on Alpine
 =================================
 
-The following instructions are for [Alpine](https://www.alpinelinux.org) 3.18.
+The following instructions are for [Alpine](https://www.alpinelinux.org) 3.19.
 
 Basic requirements to run commands:
 
@@ -77,6 +77,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo apk add desktop-file-utils gst-libav gst-plugins-base-dev gst-plugins-good gtk+3.0-dev
+    sudo apk add desktop-file-utils gst-libav gst-plugins-good gtk4-dev
 
 Alpine is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.

@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on Enterprise Linux
 ===========================================
 
-The following instructions are for distributions based on Enterprise Linux 8 and 9 (such as [Rocky Linux](https://rockylinux.org) and [AlmaLinux](https://almalinux.org)), as well as [CentOS Stream](https://centos.org).
+The following instructions are for distributions based on Enterprise Linux 9 (such as [Rocky Linux](https://rockylinux.org) and [AlmaLinux](https://almalinux.org)), as well as [CentOS Stream](https://centos.org).
 
 Basic requirements to run commands:
 
@@ -111,6 +111,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo dnf install appstream desktop-file-utils gstreamer1-libav gstreamer1-plugins-base-devel gstreamer1-plugins-good gtk3-devel
+    sudo dnf install appstream desktop-file-utils gstreamer1-libav gstreamer1-plugins-good gtk4-devel
 
 Enterprise Linux is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.

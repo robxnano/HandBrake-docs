@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on Debian
 =================================
 
-The following instructions are for [Debian](https://www.debian.org) 11 Bullseye and 12 Bookworm.
+The following instructions are for [Debian](https://www.debian.org) 12 Bookworm.
 
 Basic requirements to run commands:
 
@@ -89,6 +89,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo apt-get install appstream desktop-file-utils gettext gstreamer1.0-libav gstreamer1.0-plugins-good libgstreamer-plugins-base1.0-dev libgtk-3-dev
+    sudo apt-get install appstream desktop-file-utils gettext gstreamer1.0-libav gstreamer1.0-plugins-good libgtk-4-dev
 
 Debian is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.

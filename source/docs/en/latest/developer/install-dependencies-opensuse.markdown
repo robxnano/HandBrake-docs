@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on OpenSUSE
 ===================================
 
-The following instructions are for [OpenSUSE](https://opensuse.org) Leap 15.4 and Tumbleweed.
+The following instructions are for [OpenSUSE](https://opensuse.org) Leap 15.5 and Tumbleweed.
 
 Basic requirements to run commands:
 
@@ -84,7 +84,7 @@ Graphical interface dependencies:
 
 Install dependencies.
 
-    sudo zypper in autoconf automake binutils bzip2 cmake fontconfig-devel freetype-devel fribidi-devel gcc-c++ git gzip harfbuzz-devel lbzip2 libass-devel libjansson-devel libjpeg8-devel libmp3lame-devel libnuma-devel libogg-devel libopus-devel libsamplerate-devel libtheora-devel libtool libvorbis-devel libxml2-devel libvpx-devel m4 make meson nasm ninja patch pkg-config python3 speex-devel tar xz-devel zimg-devel zlib-devel
+    sudo zypper in autoconf automake binutils bzip2 cmake fontconfig-devel freetype-devel fribidi-devel gawk gcc-c++ git gzip harfbuzz-devel lbzip2 libass-devel libjansson-devel libjpeg8-devel libmp3lame-devel libnuma-devel libogg-devel libopus-devel libsamplerate-devel libtheora-devel libtool libvorbis-devel libxml2-devel libvpx-devel m4 make meson nasm ninja patch pkg-config python3 speex-devel tar xz-devel zimg-devel zlib-devel
 
 Install the [Packman](https://en.opensuse.org/Additional_package_repositories) Essentials repository and related additional dependencies.
 
@@ -106,6 +106,6 @@ To build with Intel Quick Sync Video support, install the QSV dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    sudo zypper in AppStream desktop-file-utils gstreamer-plugins-base-devel gstreamer-plugins-good gstreamer-plugins-libav gtk3-devel
+    sudo zypper in AppStream desktop-file-utils gstreamer-plugins-good gstreamer-plugins-libav gtk4-devel
 
 OpenSUSE is now prepared to build HandBrake. See [Building HandBrake for Linux](build-linux.html) for further instructions.

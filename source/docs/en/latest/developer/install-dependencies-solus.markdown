@@ -16,7 +16,7 @@ License_URL:     https://handbrake.fr/docs/license.html
 Installing dependencies on Solus
 ================================
 
-The following instructions are for [Solus](https://getsol.us) 4.4.
+The following instructions are for [Solus](https://getsol.us) 4.5.
 
 Basic requirements to run commands:
 

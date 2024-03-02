@@ -71,6 +71,6 @@ Install dependencies.
 
 To build the GTK [GUI](abbr:Graphical User Interface), install the graphical interface dependencies.
 
-    doas pkg_add desktop-file-utils gettext-tools gstreamer1-plugins-good gstreamer1-plugins-libav gtk+3
+    doas pkg_add desktop-file-utils gettext-tools gstreamer1-plugins-good gstreamer1-plugins-libav gtk4
 
 OpenBSD is now prepared to build HandBrake. See [Building HandBrake for BSD](build-bsd.html) for further instructions.
